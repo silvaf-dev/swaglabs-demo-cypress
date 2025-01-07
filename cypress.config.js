@@ -4,7 +4,7 @@ module.exports = defineConfig({
   retries: 1,
   e2e: {
     baseUrl: 'https://www.saucedemo.com/',
-    chromeWebSecurity: true,
+    chromeWebSecurity: false,
     setupNodeEvents(on, config) {
     },
   },
