@@ -1,8 +1,8 @@
 /// <reference types="cypress" />
 
-import { LoginPage } from "./pom/login.po.js";
+import { LoginPO } from "./pom/login.po.js";
 
-const loginPage = new LoginPage();
+const loginPage = new LoginPO();
 const baseUrl = Cypress.config('baseUrl');
 
 describe('login tests', () => {

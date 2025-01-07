@@ -1,4 +1,4 @@
-export class LoginPage {
+export class LoginPO {
     selector = {
         loginLogo: () => cy.get('.login_logo'),
         username: () => cy.getElementByTestId('username'),
@@ -6,7 +6,7 @@ export class LoginPage {
         loginBtn: () => cy.getElementByTestId('login-button'),
         errorMsg: () => cy.getElementByTestId('error'),
         errorBtn: () => cy.getElementByTestId('error-button'),
-    }
+    };
     
     command = {
         login: (username, password) => {
